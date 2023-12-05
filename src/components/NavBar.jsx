@@ -7,8 +7,12 @@ export default function NavBar() {
     <nav className="NavBar1">
       <h1>The Puppy Bowl</h1>
       <div className="nav-links">
-        <Link to="/">Home / </Link>
-        <Link to="/new">New Player Form</Link>
+        <button className="button1">
+          <Link to="/">Home </Link>
+        </button>
+        <button className="button2">
+          <Link to="/new">New Player Form</Link>
+        </button>
       </div>
     </nav>
   );

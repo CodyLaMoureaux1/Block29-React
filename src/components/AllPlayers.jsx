@@ -5,10 +5,16 @@ import { getAllPlayers } from "../api";
 import PlayerCard from "./PlayerCard";
 import "../../src/App.css";
 import SearchBar from "./SearchBar";
+import { useLocation } from "react-router-dom";
 
 export default function AllPlayers() {
   const [players, setPlayers] = useState([]);
   const [filteredPlayers, setFilteredPlayers] = useState([]);
+  const location = useLocation();
+
+  useEffect(() => {
+    setFilteredPlayers(players);
+  }, [location]);
 
   useEffect(() => {
     const fetchData = async () => {

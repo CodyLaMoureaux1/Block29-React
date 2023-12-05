@@ -13,7 +13,7 @@
   align-items: center; 
   border: 10px solid black;
   padding: 15px;
-  background-color: burlywood;
+  background-color: rgb(253, 253, 253);
   border-radius: 10px;
   
 }
@@ -33,7 +33,7 @@ font-weight:bolder;
 
 
 .player-card {
-  border: 10px solid #080808;
+  border: 8px solid #080808;
   margin: 5px;
   padding: 10px;
   text-align: center;
@@ -95,4 +95,6 @@ font-weight:bolder;
   text-align: center;
 }
 
-
+.button1{
+  margin: 10px;
+}
